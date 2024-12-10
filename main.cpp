@@ -1,35 +1,41 @@
 #include <QCoreApplication>
 #include <iostream>
 #include <string>
-//Параграф дружественные классы. Подобная вещь позволет нам сделать так, чтобы методы класса В могли обращаться к переменным класса А.
+//Классы наследники
 
 using namespace std;
 
-class MainHeroe; //формальная декларация класса MainHeroe, чтобы компилятор не ругался в 14 строке, так как MainHeroe будет объявлено
-class Vrag{      //только в 17 строке
-private:
-    int health = 100;
+class PC{
+protected:
+    int diagonal;
+    string Os;
 
 public:
-    friend class MainHeroe;    //объявление класса MainHeroe дружественным для класса Vrag
+    PC(int diagonal, string Os){
+        this->diagonal = diagonal;
+        this->Os = Os;
+    }
+
+    void get_info(){
+        cout << diagonal << endl;
+        cout << Os << endl;
+    }
 };
 
-class MainHeroe{
+class Laptop: public PC{
+private:
+    double weight;
+
 public:
-    void damage(Vrag& vrag){
-        vrag.health -=20;
-        cout << vrag.health << endl;
+    Laptop(int diagonal, string Os, double weight): PC(diagonal, Os){ //можно ли обойтись без этой ссылки на конструктор
+        this->weight = weight;                                          //почему не работает передача ссылок
     }
 
-    void heal(Vrag& vrag){
-        vrag.health += 20;
-        cout << vrag.health << endl;
+    void get_info(){
+        PC::get_info();
+        cout << weight << endl;
     }
 
-    void kill(Vrag& vrag){     //принимает объект класса Vrag
-        vrag.health = 0;
-        cout << vrag.health << endl;
-    }
 };
 
 int main(int argc, char *argv[])
@@ -37,13 +43,8 @@ int main(int argc, char *argv[])
     setlocale(LC_ALL, "RU");
     QCoreApplication a(argc, argv);
 
-    Vrag anybody;
-    MainHeroe Im;
-
-    Im.damage(anybody);
-
-    Im.kill(anybody);
-
+    Laptop Hp(16, "Hp", 1.650);
+    Hp.get_info();
 
     return 0;
 }
