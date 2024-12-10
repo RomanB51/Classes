@@ -10,6 +10,16 @@ private:
     int year;
     std::string type;
 public:
+
+    //Building(){} //пустой конструктор
+
+    Building(int y, std::string t){ //конструктор инициализатор
+        //year = y;//чтобы эти данные не повторялись с функцией set_data, разумнее подставить сюда саму функцию set_data
+        //type =t;
+
+        set_data(y, t);
+    }
+
     void set_data(int y, std::string t){
         year = y;
         type = t;
@@ -42,14 +52,20 @@ int main(int argc, char *argv[])
     house.year = 2010;
     house.get_info();*/
 
-    Building house;
-    house.set_data(2009, "Жилой дом");
+
+   /*Building house;           //теперь из-за инициализации конструктора, который принимает значения, мы не можем создавать
+    house.set_data(2009, "Жилой дом");         //пустые объекты
     house.get_info();
 
     Building school;
     school.set_data(1979, "Школа");
-    school.get_info();
+    school.get_info();*/
 
+
+    Building school(2000, "Школа");
+    Building house(1991, "Жилой дом");
+    school.get_info();
+    house.get_info();
 
     return 0;
 }
