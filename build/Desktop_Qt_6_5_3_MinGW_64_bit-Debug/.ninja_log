@@ -1,82 +1,14 @@
 # ninja log v6
-25	475	7555287357816130	Classes_autogen/timestamp	71445d346f2806e1
-25	475	7555287357816130	Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-409	5003	7555215737240346	CMakeFiles/Classes.dir/main.cpp.obj	548474607cb36571
-25	475	7555287357816130	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/timestamp	71445d346f2806e1
-5003	6634	7555215783190356	Classes.exe	d8580728f647d79a
+32	477	7555343110266210	Classes_autogen/timestamp	71445d346f2806e1
+32	477	7555343110266210	Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
+32	477	7555343110266210	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/timestamp	71445d346f2806e1
+478	5205	7555343114730511	CMakeFiles/Classes.dir/main.cpp.obj	548474607cb36571
+32	477	7555343110266210	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
 865	1267	7555144543255242	CMakeFiles/Classes.dir/Classes_autogen/mocs_compilation.cpp.obj	6ed3a0e09d8d65c3
-25	475	7555287357816130	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-29	473	7555289086583098	Classes_autogen/timestamp	71445d346f2806e1
-29	473	7555289086583098	Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-29	473	7555289086583098	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/timestamp	71445d346f2806e1
-29	473	7555289086583098	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-474	5358	7555289091035166	CMakeFiles/Classes.dir/main.cpp.obj	548474607cb36571
-5359	6660	7555289139875709	Classes.exe	d8580728f647d79a
-234	693	7555295336422730	Classes_autogen/timestamp	71445d346f2806e1
-234	693	7555295336422730	Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-234	693	7555295336422730	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/timestamp	71445d346f2806e1
-234	693	7555295336422730	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-40	488	7555295667274878	Classes_autogen/timestamp	71445d346f2806e1
-40	488	7555295667274878	Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-40	488	7555295667274878	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/timestamp	71445d346f2806e1
-40	488	7555295667274878	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-489	5527	7555295671764655	CMakeFiles/Classes.dir/main.cpp.obj	548474607cb36571
-30	482	7555296178424302	Classes_autogen/timestamp	71445d346f2806e1
-30	482	7555296178424302	Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-30	482	7555296178424302	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/timestamp	71445d346f2806e1
-30	482	7555296178424302	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-26	487	7555296397955994	Classes_autogen/timestamp	71445d346f2806e1
-26	487	7555296397955994	Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-26	487	7555296397955994	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/timestamp	71445d346f2806e1
-26	487	7555296397955994	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-29	487	7555296892042494	Classes_autogen/timestamp	71445d346f2806e1
-29	487	7555296892042494	Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-29	487	7555296892042494	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/timestamp	71445d346f2806e1
-29	487	7555296892042494	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-488	5293	7555296896630855	CMakeFiles/Classes.dir/main.cpp.obj	548474607cb36571
-210	955	7555302451024310	Classes_autogen/timestamp	71445d346f2806e1
-210	955	7555302451024310	Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-210	955	7555302451024310	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/timestamp	71445d346f2806e1
-210	955	7555302451024310	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-434	1010	7555303542753150	Classes_autogen/timestamp	71445d346f2806e1
-434	1010	7555303542753150	Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-434	1010	7555303542753150	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/timestamp	71445d346f2806e1
-434	1010	7555303542753150	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-30	615	7555303764473271	Classes_autogen/timestamp	71445d346f2806e1
-30	615	7555303764473271	Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-30	615	7555303764473271	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/timestamp	71445d346f2806e1
-30	615	7555303764473271	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-617	6583	7555303770334869	CMakeFiles/Classes.dir/main.cpp.obj	548474607cb36571
-151	659	7555314292195598	Classes_autogen/timestamp	71445d346f2806e1
-151	659	7555314292195598	Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-151	659	7555314292195598	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/timestamp	71445d346f2806e1
-151	659	7555314292195598	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-661	11392	7555314297296728	CMakeFiles/Classes.dir/main.cpp.obj	548474607cb36571
-342	728	7555315164391999	Classes_autogen/timestamp	71445d346f2806e1
-342	728	7555315164391999	Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-342	728	7555315164391999	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/timestamp	71445d346f2806e1
-342	728	7555315164391999	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-729	5964	7555315168252029	CMakeFiles/Classes.dir/main.cpp.obj	548474607cb36571
-26	481	7555324054953025	Classes_autogen/timestamp	71445d346f2806e1
-26	481	7555324054953025	Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-26	481	7555324054953025	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/timestamp	71445d346f2806e1
-26	481	7555324054953025	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-482	5016	7555324059508552	CMakeFiles/Classes.dir/main.cpp.obj	548474607cb36571
-5016	6680	7555324104840873	Classes.exe	d8580728f647d79a
-267	645	7555324217988664	Classes_autogen/timestamp	71445d346f2806e1
-267	645	7555324217988664	Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-267	645	7555324217988664	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/timestamp	71445d346f2806e1
-267	645	7555324217988664	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-646	6387	7555324221776557	CMakeFiles/Classes.dir/main.cpp.obj	548474607cb36571
-29	429	7555324453123803	Classes_autogen/timestamp	71445d346f2806e1
-29	429	7555324453123803	Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-29	429	7555324453123803	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/timestamp	71445d346f2806e1
-29	429	7555324453123803	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-430	5070	7555324457130849	CMakeFiles/Classes.dir/main.cpp.obj	548474607cb36571
-5070	7345	7555324503541208	Classes.exe	d8580728f647d79a
-384	837	7555325467454599	Classes_autogen/timestamp	71445d346f2806e1
-384	837	7555325467454599	Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-384	837	7555325467454599	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/timestamp	71445d346f2806e1
-384	837	7555325467454599	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
-839	6197	7555325471999079	CMakeFiles/Classes.dir/main.cpp.obj	548474607cb36571
-6197	9330	7555325525581003	Classes.exe	d8580728f647d79a
+5205	5578	7555343161999487	Classes.exe	d8580728f647d79a
+33	465	7555343556634769	Classes_autogen/timestamp	71445d346f2806e1
+33	465	7555343556634769	Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
+33	465	7555343556634769	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/timestamp	71445d346f2806e1
+33	465	7555343556634769	D:/C++/QT creator/My_projectV2/Classes/build/Desktop_Qt_6_5_3_MinGW_64_bit-Debug/Classes_autogen/mocs_compilation.cpp	71445d346f2806e1
+466	5225	7555343560959278	CMakeFiles/Classes.dir/main.cpp.obj	548474607cb36571
+5226	5590	7555343608554186	Classes.exe	d8580728f647d79a
