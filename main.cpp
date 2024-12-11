@@ -1,50 +1,29 @@
 #include <QCoreApplication>
 #include <iostream>
 #include <string>
-//Классы наследники
+#include <deque>
+//Шаблоны функций
 
 using namespace std;
 
-class PC{
-protected:
-    int diagonal;
-    string Os;
+template <typename T, typename T2> //в угловых скобках непросто type T, а typename T, ты про это забыл!!!
+void func(T& massive, T2 size){ //вместо типов array, vector... просто подставь T, не надо ее ставить в угловых скобках, как выше, ты про это забыл!!!
+    for(const auto& elem : massive)
+        cout << elem << endl;
+}
 
-public:
-    PC(int diagonal, string Os){
-        this->diagonal = diagonal;
-        this->Os = Os;
-    }
-
-    void get_info(){
-        cout << diagonal << endl;
-        cout << Os << endl;
-    }
-};
-
-class Laptop: public PC{
-private:
-    double weight;
-
-public:
-    Laptop(int diagonal, string Os, double weight): PC(diagonal, Os){ //можно ли обойтись без этой ссылки на конструктор
-        this->weight = weight;                                          //почему не работает передача ссылок
-    }
-
-    void get_info(){
-        PC::get_info();
-        cout << weight << endl;
-    }
-
-};
 
 int main(int argc, char *argv[])
 {
     setlocale(LC_ALL, "RU");
     QCoreApplication a(argc, argv);
 
-    Laptop Hp(16, "Hp", 1.650);
-    Hp.get_info();
+    string my_mass[] = {"gfhf", "ejkw", "jejehe", "jrjesd"}; //сначала объявил массив как array my_mass[] - это ошибка!!! Массив может быть int, float
+    func(my_mass, size(my_mass));
 
+    vector<int> vec = {1, 3, 4, 5, 9};
+    func(vec, vec.size());
     return 0;
+
+
 }
