@@ -23,6 +23,18 @@ int lowest_val(int *mass, int len){ //ты здесь ошибься, напис
     return k;
 }
 
+
+//Реализация функции через ссылку
+
+int ssilka_lowest_val(int (&mass)[], int len){ //ты здесь ошибься, написав int lowest_val(*mass, int len), то есть не поставил int.
+    int k = mass[0]; //ты не можешь объявить k в цикле for, потому что return ее не увидит, так как k будет локальной переменной
+    for(int i = 0; i < len; i++){  //запись int k = *mass по умолчанию передает первое значение массива
+        if(k > mass[i]) //так как элементы массива расположены подряд в памяти, то мы адрес просто увеличиваем на 1 и так проходим весь массив
+            k = mass[i];
+    }
+    return k;
+}
+
 int main(int argc, char *argv[])
 {
     setlocale(LC_ALL, "RU");
@@ -75,6 +87,7 @@ int main(int argc, char *argv[])
     int arr[] = {2, 3, 4, 5, -2};
 
     cout << lowest_val(arr, size(arr)) << endl;
+    cout << ssilka_lowest_val(arr, size(arr)) << endl;
 
 
     return 0;
