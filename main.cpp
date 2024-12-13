@@ -1,98 +1,61 @@
 #include <QCoreApplication>
 #include <iostream>
 #include <string>
-#include <deque>
-//Шаблоны функций, указатели, ссылки.
+//Классы наследники
 
 using namespace std;
 
-template <typename T, typename T2> //в угловых скобках непросто type T, а typename T, ты про это забыл!!!
-void func(T& massive, T2 size){ //вместо типов array, vector... просто подставь T, не надо ее ставить в угловых скобках, как выше, ты про это забыл!!!
-    for(const auto& elem : massive)
-        cout << elem << endl;
-}
+class PC{
+protected:
+    int diagonal;
+    string Os;
 
-
-
-int lowest_val(int *mass, int len){ //ты здесь ошибься, написав int lowest_val(*mass, int len), то есть не поставил int.
-    int k = *mass; //ты не можешь объявить k в цикле for, потому что return ее не увидит, так как k будет локальной переменной
-    for(int i = 0; i < len; i++){  //запись int k = *mass по умолчанию передает первое значение массива
-        if(k > *(mass + i)) //так как элементы массива расположены подряд в памяти, то мы адрес просто увеличиваем на 1 и так проходим весь массив
-            k = *(mass + i);
+public:
+    PC(int diagonal, string Os){
+        this->diagonal = diagonal;
+        this->Os = Os;
     }
-    return k;
-}
 
-
-//Реализация функции через ссылку
-
-int ssilka_lowest_val(int (&mass)[], int len){ //ты здесь ошибься, написав int lowest_val(*mass, int len), то есть не поставил int.
-    int k = mass[0]; //ты не можешь объявить k в цикле for, потому что return ее не увидит, так как k будет локальной переменной
-    for(int i = 0; i < len; i++){  //запись int k = *mass по умолчанию передает первое значение массива
-        if(k > mass[i]) //так как элементы массива расположены подряд в памяти, то мы адрес просто увеличиваем на 1 и так проходим весь массив
-            k = mass[i];
+    void get_info(){
+        cout << diagonal << endl;
+        cout << Os << endl;
     }
-    return k;
-}
+
+    void func(){}
+};
+
+class Laptop: public PC{
+private:
+    double weight;
+
+public:
+    Laptop(int diagonal, string Os, double weight): PC(diagonal, Os){ //можно ли обойтись без этой ссылки на конструктор
+        this->weight = weight;                                          //почему не работает передача ссылок
+    }
+
+    void get_info(){
+        PC::get_info();
+        cout << weight << endl;
+    }
+
+    void func_3(){}
+
+};
 
 int main(int argc, char *argv[])
 {
     setlocale(LC_ALL, "RU");
     QCoreApplication a(argc, argv);
 
-    string my_mass[] = {"gfhf", "ejkw", "jejehe", "jrjesd"}; //сначала объявил массив как array my_mass[] - это ошибка!!! Массив может быть int, float
-    func(my_mass, size(my_mass));
+    Laptop Hp(16, "Hp", 1.650);
+    PC g(13, "Linux");
+    //Hp.get_info();
+    Hp.PC::get_info(); //обращение к методу get_info() класса РС
+    Hp.func(); //наследуем фунцию func из класса PC
 
-    vector<int> vec = {1, 3, 4, 5, 9};
-    func(vec, vec.size());
-
-    int c = 5;
-    int* num = &c;
-    cout << num << endl;
-
-    int v = 5;  // создали переменную и заняли 4 байта
-    int &l = v; // переменная l хранит в себе адрес v и тем самым практически не занимает место в оперативке. Запись ниже - это тупо, так как занимает еще 4 байта сверху
-    int h = v;  // заняли еще 4 байта, создав переменную h
-
-    cout << "&l: " << &l << " l: " << l << endl; //выводим адрес и значение
-
-    l = 15; //поменяли значение ссылки и v тоже стало 15
-    cout << "l: " << l << " v: " << v << endl;
-
-/* ЗАЧЕМ НУЖНЫ ССЫЛКИ.  Обмен значениями двух переменных. Например, если нужно передать в функцию какие-либо объёмные данные, например,
-большие структуры, то часто целесообразно сделать это через ссылки.
-Изменение данных в неудобных местах. Например, если нужно увеличить значения всех элементов массива в два раза, то использование
-ссылки позволит оптимизировать работу с циклом, поскольку значение элемента не копируется в переменную.*/
-
-    //Разница между ссылками и указателями минимальна
-
-    //В случае указателей, можно делать сдвиг указателей, что удобно в случае массивов
-
-    int val = 250;
-    int* ptr; //ptr принято ставить там, где создана переменная указателя (pointer), смотри пример ниже
-    //int* ptr и int *ptr - оба объявления допускаются
-    int* ptrval = &val; // &val - это по факту ссылка
-
-    cout << "Значение: " << *ptrval << endl;
-
-    *ptrval = 111;
-
-    cout << "Новое значение: " << *ptrval << endl;
-
-    //Удаляем указатель
-    ptrval = nullptr; //теперь ptrval вообще ни на что не указывает, он не содержит в себе никакого адреса
-
-
-    //Практический пример для указателей
-    int arr[] = {2, 3, 4, 5, -2};
-
-    cout << lowest_val(arr, size(arr)) << endl;
-    cout << ssilka_lowest_val(arr, size(arr)) << endl;
-
+    //Класс Laptop в отличии от класса PC содержит три переменные, а не две:
+    cout<<"g:" << sizeof(g) << endl; //40кб
+    cout<<"Hp: " << sizeof(Hp) << endl; //48кб
 
     return 0;
-
-
-
-
 }
