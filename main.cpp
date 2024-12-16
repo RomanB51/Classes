@@ -5,57 +5,68 @@
 
 using namespace std;
 
-class PC{
-protected:
-    int diagonal;
-    string Os;
-
-public:
-    PC(int diagonal, string Os){
-        this->diagonal = diagonal;
-        this->Os = Os;
-    }
-
-    void get_info(){
-        cout << diagonal << endl;
-        cout << Os << endl;
-    }
-
-    void func(){}
-};
-
-class Laptop: public PC{
+class Annimal{
 private:
-    double weight;
+    string name;
 
 public:
-    Laptop(int diagonal, string Os, double weight): PC(diagonal, Os){ //можно ли обойтись без этой ссылки на конструктор
-        this->weight = weight;                                          //почему не работает передача ссылок
+    Annimal(const string& n){
+        name = n;
     }
 
-    void get_info(){
-        PC::get_info();
-        cout << weight << endl;
+    string getName(){
+        return name;
     }
 
-    void func_3(){}
+    virtual string Voice() const = 0; //формальное объявление виртуальной функции в классе annimal, так как мы не создаем
+//объекты класса annimal, то и фактическое создание метода в классе annimal нам не нужно. ОБРАТИ ВНИМАНИЕ НА КЛЮЧЕВОЕ СЛОВО
+// virtual
+
+    void new_name(){
+        cout << "jhffjd";
+    }
+};
+
+class Cat: public Annimal{
+public:
+
+    Cat(const string& n): Annimal(n){}
+
+    string Voice() const override {//обрати внимание на ключевое слово override
+        return "Meow";
+    }
 
 };
+
+class Dog: public Annimal{
+public:
+
+    Dog(const string& n): Annimal(n){}//наследование конструктора
+
+    string Voice() const override {//обрати внимание на ключевое слово override
+        return "Woof";
+    }
+};
+
+void Procces(Annimal& object){//функция вывода инфы
+    cout << object.getName() << " Voice: " << object.Voice() << endl;
+}
 
 int main(int argc, char *argv[])
 {
     setlocale(LC_ALL, "RU");
     QCoreApplication a(argc, argv);
 
-    Laptop Hp(16, "Hp", 1.650);
-    PC g(13, "Linux");
-    //Hp.get_info();
-    Hp.PC::get_info(); //обращение к методу get_info() класса РС
-    Hp.func(); //наследуем фунцию func из класса PC
+    Cat Dasha("Даша");
+    Dog Charli("Чарлик");
 
-    //Класс Laptop в отличии от класса PC содержит три переменные, а не две:
-    cout<<"g:" << sizeof(g) << endl; //40кб
-    cout<<"Hp: " << sizeof(Hp) << endl; //48кб
+    Procces(Dasha);
+    Procces(Charli);
+
+    //Dasha.Annimal::new_name("Сима"); //Роди вот эту функцию
+    //Procces(Dasha);
+    Dasha.new_name();
+
 
     return 0;
 }
